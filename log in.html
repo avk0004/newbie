@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100;
+            height: 100vh;
+        }
+     
+        .form_div form {
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            height: auto;
+            width: 25vw;
+            border:1px solid black;
+            border-radius: 2px;
+        }
+        .form .texts{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+
+        } 
+        input, label {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        label{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div class="form_div">
+        <form class="form">
+            <p> username</p>
+            <input class="texts" type="text" name="username" placeholder="username" id="user">
+            <input class="texts" type="number" placeholder="number">
+            <label class="texts" for="n"> feedback</label>
+            <input type="text" name="feedback" id="n">
+            <!-- <button>log in</button> -->
+             <br>
+             <p> Gender</p>
+            <input type="radio" value="m" name="gender" id="male" >
+            <label for="male"> male</label>
+            <input type="radio" value="f" name="gender" id="female" >
+            <label for="female"> female</label>
+            <input type="radio" value="o" name="gender" id="other" >
+            <label for="other"> other</label>
+            <h1>SKILLS</h1>
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="JS" id="JS">
+            <label for="JS">JAVA SCRIPT</label>
+            <br>
+            <br>
+            <input type="email" name="email_id" id="e_id" placeholder="email">
+            <br>
+            <label for="pass">PASSWORD</label>
+            <input type="password" name="userpass" id="pass">
+            
+        </form>
+    </div>
+</body>
+</html>
